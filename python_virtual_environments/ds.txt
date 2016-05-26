@@ -1,0 +1,21 @@
+# Data Science libraries
+numpy
+scipy
+sklearn
+pandas
+matplotlib
+ipython
+sympy
+sqlalchemy
+networkx
+whoosh
+selenium
+lxml
+retrying
+requests
+unicodecsv
+psycopg2
+tqdm
+luigi
+cython
+auto-sklearn
