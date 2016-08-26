@@ -30,7 +30,7 @@ eof
 
 mkdir src
 cat > src/Main.hs <<eof
-module Main where
+module Main(main) where
 
 main :: IO ()
 main = do
