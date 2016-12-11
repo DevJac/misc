@@ -1,0 +1,26 @@
+settings = {
+  core = {
+    real_name = "buttons";
+    user_name = "buttons";
+    nick = "buttons";
+  };
+  "fe-text" = { actlist_sort = "refnum"; };
+  "fe-common/core" = { autocreate_own_query = "no"; };
+};
+chatnets = {
+  freenode = {
+    type = "IRC";
+    nick = "buttons840";
+    autosendcmd = "wait 6000; msg nickserv identify MY_PASSWORD; wait 6000";
+  };
+};
+servers = (
+  {
+    address = "irc.freenode.net";
+    chatnet = "freenode";
+    port = "7000";
+    use_ssl = "yes";
+    ssl_verify = "yes";
+    autoconnect = "yes";
+  }
+);
