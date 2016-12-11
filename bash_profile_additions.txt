@@ -1,0 +1,7 @@
+bins="$HOME/.bin $HOME/.local/bin"
+for bin in $bins
+do
+    if [ -d $bin ] ; then
+        PATH="$bin:$PATH"
+    fi
+done
