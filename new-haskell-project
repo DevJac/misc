@@ -22,11 +22,11 @@ executable $1
   ghc-options:          -Wall
                         -Werror
                         -threaded
-                        -XPartialTypeSignatures
-                        -XScopedTypeVariables
                         -fdefer-typed-holes
                         -fno-warn-missing-signatures
                         -fno-warn-partial-type-signatures
+  default-extensions:   ScopedTypeVariables
+                        PartialTypeSignatures
   build-depends:        base
 eof
 
