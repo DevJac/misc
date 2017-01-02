@@ -25,6 +25,8 @@ executable $1
                         -fdefer-typed-holes
                         -fno-warn-missing-signatures
                         -fno-warn-partial-type-signatures
+  default-extensions:   PartialTypeSignatures
+                        ScopedTypeVariables
   build-depends:        base
 eof
 
