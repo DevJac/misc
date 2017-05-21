@@ -18,4 +18,3 @@ psycopg2
 tqdm
 luigi
 cython
-auto-sklearn
