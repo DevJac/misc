@@ -259,6 +259,7 @@ you should place your code here."
   (setq org-startup-indented t)
   (setq org-startup-truncated nil)
   (add-hook 'org-mode-hook (lambda () (setq word-wrap t)))
+  (setq org-ellipsis "⤵")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
