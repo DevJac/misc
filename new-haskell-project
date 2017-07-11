@@ -49,6 +49,7 @@ cat > .gitignore <<eof
 eof
 
 cat > run.sh <<eof
+#!/usr/bin/env bash
 stack build && stack exec $1
 eof
 chmod +x run.sh
