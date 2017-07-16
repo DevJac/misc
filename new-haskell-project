@@ -6,55 +6,10 @@ then
   exit
 fi
 
-mkdir $1
+stack new $1 ~/Code/other/misc/haskell-stack-templates/minimal.hsfiles
+
 cd $1
-
-cat > $1.cabal <<eof
-name:                   $1
-version:                0.1.0.0
-build-type:             Simple
-cabal-version:          >=1.10
-
-executable $1
-  hs-source-dirs:       src
-  main-is:              Main.hs
-  default-language:     Haskell2010
-  ghc-options:          -Wall
-                        -Werror
-                        -threaded
-                        -fdefer-typed-holes
-                        -fno-warn-missing-signatures
-                        -fno-warn-partial-type-signatures
-  default-extensions:   PartialTypeSignatures
-                        ScopedTypeVariables
-  build-depends:        base
-eof
-
-cat > Setup.hs <<eof
-import Distribution.Simple
-main = defaultMain
-eof
-
-mkdir src
-cat > src/Main.hs <<eof
-module Main(main) where
-
-main :: IO ()
-main = do
-  putStrLn "hello world"
-eof
-
-cat > .gitignore <<eof
-.stack-work
-eof
-
-cat > run.sh <<eof
-#!/usr/bin/env bash
-stack build && stack exec $1
-eof
 chmod +x run.sh
-
-stack init
 
 git init
 git add .
