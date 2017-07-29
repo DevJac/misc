@@ -20,6 +20,12 @@ library
   exposed-modules:     Lib
   ghc-options:         -Wall
                        -Werror
+                       -Wincomplete-uni-patterns
+                       -Wincomplete-record-updates
+                       -Wmissing-import-lists
+                       -Wcompat
+                       -Wnoncanonical-monad-instances
+                       -Wnoncanonical-monadfail-instances
                        -threaded
                        -fdefer-typed-holes
                        -fno-warn-missing-signatures
@@ -34,6 +40,12 @@ executable {{name}}
   main-is:             Main.hs
   ghc-options:         -Wall
                        -Werror
+                       -Wincomplete-uni-patterns
+                       -Wincomplete-record-updates
+                       -Wmissing-import-lists
+                       -Wcompat
+                       -Wnoncanonical-monad-instances
+                       -Wnoncanonical-monadfail-instances
                        -threaded
                        -fdefer-typed-holes
                        -fno-warn-missing-signatures
@@ -50,6 +62,12 @@ test-suite tests
   main-is:             Spec.hs
   ghc-options:         -Wall
                        -Werror
+                       -Wincomplete-uni-patterns
+                       -Wincomplete-record-updates
+                       -Wmissing-import-lists
+                       -Wcompat
+                       -Wnoncanonical-monad-instances
+                       -Wnoncanonical-monadfail-instances
                        -threaded
                        -fdefer-typed-holes
                        -fno-warn-missing-signatures
