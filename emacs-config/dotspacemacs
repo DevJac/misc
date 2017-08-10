@@ -261,6 +261,9 @@ you should place your code here."
   (add-hook 'org-mode-hook (lambda () (setq word-wrap t)))
   (setq org-ellipsis "⤵")
 
+  (setq org-drill-hide-item-headings-p t)
+  (setq org-drill-add-random-noise-to-intervals-p t)
+
   (defun update-org-latex-fragments ()
     (org-toggle-latex-fragment '(16))
     (plist-put org-format-latex-options :scale (max 1.0 (* 1.5 text-scale-mode-amount)))
