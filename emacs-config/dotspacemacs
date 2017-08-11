@@ -263,6 +263,7 @@ you should place your code here."
 
   (setq org-drill-hide-item-headings-p t)
   (setq org-drill-add-random-noise-to-intervals-p t)
+  (setq org-drill-leech-method (quote warn))
 
   (defun update-org-latex-fragments ()
     (org-toggle-latex-fragment '(16))
