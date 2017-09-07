@@ -88,6 +88,6 @@ module Lib where
 helloWorld = putStrLn "hello world"
 
 {-# START_FILE app/Main.hs #-}
-import Lib
+import Lib (helloWorld)
 
 main = helloWorld
