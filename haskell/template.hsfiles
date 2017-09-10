@@ -26,7 +26,6 @@ library
                        -Wcompat
                        -Wnoncanonical-monad-instances
                        -Wnoncanonical-monadfail-instances
-                       -threaded
                        -fdefer-typed-holes
                        -fno-warn-missing-signatures
                        -fno-warn-partial-type-signatures
