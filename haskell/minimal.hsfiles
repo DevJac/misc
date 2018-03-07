@@ -8,14 +8,23 @@ executable {{name}}
   hs-source-dirs:       src
   main-is:              Main.hs
   default-language:     Haskell2010
-  ghc-options:          -Wall
+  ghc-options:          -threaded
                         -Werror
-                        -threaded
+                        -Wall
+                        -Wcompat
+                        -Wnoncanonical-monad-instances
+                        -Wnoncanonical-monadfail-instances
                         -fdefer-typed-holes
                         -fno-warn-missing-signatures
                         -fno-warn-partial-type-signatures
-  default-extensions:   PartialTypeSignatures
+  default-extensions:   BangPatterns
+                        LambdaCase
+                        MultiWayIf
+                        NoMonomorphismRestriction
+                        PartialTypeSignatures
+                        PatternGuards
                         ScopedTypeVariables
+                        ViewPatterns
   build-depends:        base
 
 {-# START_FILE src/Main.hs #-}
