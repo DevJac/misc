@@ -21,6 +21,7 @@ executable {{name}}
                         LambdaCase
                         MultiWayIf
                         NoMonomorphismRestriction
+                        OverloadedStrings
                         PartialTypeSignatures
                         PatternGuards
                         ScopedTypeVariables
