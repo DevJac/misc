@@ -25,6 +25,7 @@ executable {{name}}
                         PartialTypeSignatures
                         PatternGuards
                         ScopedTypeVariables
+                        TypeApplications
                         ViewPatterns
   build-depends:        base
 
