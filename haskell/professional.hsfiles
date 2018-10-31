@@ -20,6 +20,7 @@ library
                         -Wcompat
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
+                        -Wincomplete-uni-patterns
                         -fdefer-typed-holes
   build-depends:        base
 
@@ -33,6 +34,7 @@ executable {{name}}
                         -Wcompat
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
+                        -Wincomplete-uni-patterns
                         -threaded
                         -fdefer-typed-holes
   build-depends:        base
@@ -49,6 +51,7 @@ test-suite tests
                         -Wcompat
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
+                        -Wincomplete-uni-patterns
                         -threaded
                         -fdefer-typed-holes
   build-depends:        base
