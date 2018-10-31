@@ -17,10 +17,11 @@ library
   ghc-options:          -Wall
                         -Werror
                         -Wmissing-import-lists
+                        -Wincomplete-uni-patterns
+                        -Wincomplete-record-updates
                         -Wcompat
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
-                        -Wincomplete-uni-patterns
                         -fdefer-typed-holes
   build-depends:        base
 
@@ -31,10 +32,11 @@ executable {{name}}
   ghc-options:          -Wall
                         -Werror
                         -Wmissing-import-lists
+                        -Wincomplete-uni-patterns
+                        -Wincomplete-record-updates
                         -Wcompat
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
-                        -Wincomplete-uni-patterns
                         -threaded
                         -fdefer-typed-holes
   build-depends:        base
@@ -48,10 +50,11 @@ test-suite tests
   ghc-options:          -Wall
                         -Werror
                         -Wmissing-import-lists
+                        -Wincomplete-uni-patterns
+                        -Wincomplete-record-updates
                         -Wcompat
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
-                        -Wincomplete-uni-patterns
                         -threaded
                         -fdefer-typed-holes
   build-depends:        base

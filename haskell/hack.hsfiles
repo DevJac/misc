@@ -15,6 +15,7 @@ executable {{name}}
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
                         -Wincomplete-uni-patterns
+                        -Wincomplete-record-updates
                         -fdefer-typed-holes
                         -fno-warn-missing-signatures
                         -fno-warn-partial-type-signatures
