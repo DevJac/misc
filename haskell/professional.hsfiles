@@ -38,6 +38,7 @@ executable {{name}}
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
                         -threaded
+                        -rtsopts
                         -fdefer-typed-holes
   build-depends:        base
                       , {{name}}
@@ -56,6 +57,7 @@ test-suite tests
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
                         -threaded
+                        -rtsopts
                         -fdefer-typed-holes
   build-depends:        base
                       , {{name}}
