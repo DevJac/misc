@@ -79,3 +79,18 @@ import Lib (helloWorld)
 
 main :: IO ()
 main = helloWorld
+
+{-# START_FILE .gitignore #-}
+.stack-work
+
+{-# START_FILE run.sh #-}
+#!/usr/bin/env bash
+stack build && stack exec {{name}}
+
+{-# START_FILE .ghci #-}
+:set +m
+:set -Wno-type-defaults
+:set editor vim
+:set prompt "λ %l > "
+:set prompt-cont "  %l | "
+
