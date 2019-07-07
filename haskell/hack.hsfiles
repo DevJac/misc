@@ -1,25 +1,12 @@
 {-# START_FILE {{name}}.cabal #-}
+cabal-version:          2.4
 name:                   {{name}}
-version:                0.1.0.0
-build-type:             Simple
-cabal-version:          >=1.10
+version:                0.0.0.0
 
 executable {{name}}
+  default-language:     Haskell2010
   hs-source-dirs:       src
   main-is:              Main.hs
-  default-language:     Haskell2010
-  ghc-options:          -threaded
-                        -rtsopts
-                        -Werror
-                        -Wall
-                        -Wcompat
-                        -Wnoncanonical-monad-instances
-                        -Wnoncanonical-monadfail-instances
-                        -Wincomplete-uni-patterns
-                        -Wincomplete-record-updates
-                        -fdefer-typed-holes
-                        -fno-warn-missing-signatures
-                        -fno-warn-partial-type-signatures
   default-extensions:   BangPatterns
                         InstanceSigs
                         LambdaCase
@@ -31,6 +18,18 @@ executable {{name}}
                         ScopedTypeVariables
                         TypeApplications
                         ViewPatterns
+  ghc-options:          -Wall
+                        -Werror
+                        -Wincomplete-uni-patterns
+                        -Wincomplete-record-updates
+                        -Wcompat
+                        -Wnoncanonical-monad-instances
+                        -Wnoncanonical-monadfail-instances
+                        -threaded
+                        -rtsopts
+                        -fdefer-typed-holes
+                        -fno-warn-missing-signatures
+                        -fno-warn-partial-type-signatures
   build-depends:        base
 
 {-# START_FILE src/Main.hs #-}
