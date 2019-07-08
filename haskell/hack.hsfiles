@@ -19,12 +19,14 @@ executable {{name}}
                         TypeApplications
                         ViewPatterns
   ghc-options:          -Wall
-                        -Werror
-                        -Wincomplete-uni-patterns
-                        -Wincomplete-record-updates
                         -Wcompat
+                        -Widentities
+                        -Wincomplete-record-updates
+                        -Wincomplete-uni-patterns
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
+                        -Wpartial-fields
+                        -Wredundant-constraints
                         -threaded
                         -rtsopts
                         -fdefer-typed-holes

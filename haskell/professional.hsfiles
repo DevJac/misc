@@ -10,12 +10,16 @@ library
   default-extensions:   PartialTypeSignatures
   ghc-options:          -Wall
                         -Werror
-                        -Wmissing-import-lists
-                        -Wincomplete-uni-patterns
-                        -Wincomplete-record-updates
                         -Wcompat
+                        -Widentities
+                        -Wincomplete-record-updates
+                        -Wincomplete-uni-patterns
+                        -Wmissing-export-lists
+                        -Wmissing-import-lists
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
+                        -Wpartial-fields
+                        -Wredundant-constraints
                         -fdefer-typed-holes
   build-depends:        base
 
@@ -26,15 +30,19 @@ executable {{name}}
   default-extensions:   PartialTypeSignatures
   ghc-options:          -Wall
                         -Werror
-                        -Wmissing-import-lists
-                        -Wincomplete-uni-patterns
-                        -Wincomplete-record-updates
                         -Wcompat
+                        -Widentities
+                        -Wincomplete-record-updates
+                        -Wincomplete-uni-patterns
+                        -Wmissing-export-lists
+                        -Wmissing-import-lists
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
-                        -threaded
-                        -rtsopts
+                        -Wpartial-fields
+                        -Wredundant-constraints
                         -fdefer-typed-holes
+                        -rtsopts
+                        -threaded
   build-depends:        base
                       , {{name}}
 
@@ -46,15 +54,19 @@ test-suite tests
   default-extensions:   PartialTypeSignatures
   ghc-options:          -Wall
                         -Werror
-                        -Wmissing-import-lists
-                        -Wincomplete-uni-patterns
-                        -Wincomplete-record-updates
                         -Wcompat
+                        -Widentities
+                        -Wincomplete-record-updates
+                        -Wincomplete-uni-patterns
+                        -Wmissing-export-lists
+                        -Wmissing-import-lists
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
-                        -threaded
-                        -rtsopts
+                        -Wpartial-fields
+                        -Wredundant-constraints
                         -fdefer-typed-holes
+                        -rtsopts
+                        -threaded
   build-depends:        base
                       , {{name}}
 
