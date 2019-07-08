@@ -14,8 +14,8 @@ library
                         -Widentities
                         -Wincomplete-record-updates
                         -Wincomplete-uni-patterns
-                        -Wmissing-export-lists
-                        -Wmissing-import-lists
+                        --Wmissing-export-lists
+                        --Wmissing-import-lists
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
                         -Wpartial-fields
@@ -34,8 +34,8 @@ executable {{name}}
                         -Widentities
                         -Wincomplete-record-updates
                         -Wincomplete-uni-patterns
-                        -Wmissing-export-lists
-                        -Wmissing-import-lists
+                        --Wmissing-export-lists
+                        --Wmissing-import-lists
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
                         -Wpartial-fields
@@ -58,8 +58,8 @@ test-suite tests
                         -Widentities
                         -Wincomplete-record-updates
                         -Wincomplete-uni-patterns
-                        -Wmissing-export-lists
-                        -Wmissing-import-lists
+                        --Wmissing-export-lists
+                        --Wmissing-import-lists
                         -Wnoncanonical-monad-instances
                         -Wnoncanonical-monadfail-instances
                         -Wpartial-fields
