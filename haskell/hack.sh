@@ -1,4 +1,15 @@
-{-# START_FILE {{name}}.cabal #-}
+#!/user/bin/env bash
+
+if [ -z $1 ]
+then
+    echo "Must provide project name, will do nothing."
+    exit
+fi
+
+mkdir $1
+cd $1
+
+cat > $1.cabal <<EOF
 cabal-version:          2.4
 name:                   {{name}}
 version:                0.0.0.0
@@ -33,21 +44,27 @@ executable {{name}}
                         -fno-warn-missing-signatures
                         -fno-warn-partial-type-signatures
   build-depends:        base
+EOF
 
-{-# START_FILE src/Main.hs #-}
+cat > src/Main.hs <<EOF
 main = putStrLn "hello world"
+EOF
 
-{-# START_FILE .gitignore #-}
-.stack-work
+cat > .gitignore <<EOF
+dist/
+dist-newstyle/
+.stack-work/
+cabal.project.local
+*~
+*.lock
+EOF
 
-{-# START_FILE run.sh #-}
-#!/usr/bin/env bash
-stack build && stack exec {{name}}
-
-{-# START_FILE .ghci #-}
+cat > .ghci <<EOF
 :set +m
 :set -Wno-type-defaults
 :set editor vim
 :set prompt "λ %l > "
 :set prompt-cont "  %l | "
+EOF
 
+cd ..
