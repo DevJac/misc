@@ -11,7 +11,7 @@ cd $1
 
 cat > $1.cabal <<EOF
 cabal-version:          2.4
-name:                   {{name}}
+name:                   $1
 version:                0.0.0.0
 
 library
@@ -34,7 +34,7 @@ library
                         -fdefer-typed-holes
   build-depends:        base
 
-executable {{name}}
+executable $1
   default-language:     Haskell2010
   hs-source-dirs:       app
   main-is:              Main.hs
@@ -55,7 +55,7 @@ executable {{name}}
                         -rtsopts
                         -threaded
   build-depends:        base
-                      , {{name}}
+                      , $1
 
 test-suite tests
   default-language:     Haskell2010
@@ -79,7 +79,7 @@ test-suite tests
                         -rtsopts
                         -threaded
   build-depends:        base
-                      , {{name}}
+                      , $1
 EOF
 
 mkdir test

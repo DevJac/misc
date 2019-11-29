@@ -11,10 +11,10 @@ cd $1
 
 cat > $1.cabal <<EOF
 cabal-version:          2.4
-name:                   {{name}}
+name:                   $1
 version:                0.0.0.0
 
-executable {{name}}
+executable $1
   default-language:     Haskell2010
   hs-source-dirs:       src
   main-is:              Main.hs
