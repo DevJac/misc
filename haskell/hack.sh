@@ -35,7 +35,6 @@ executable $1
                         -Wincomplete-record-updates
                         -Wincomplete-uni-patterns
                         -Wnoncanonical-monad-instances
-                        -Wnoncanonical-monadfail-instances
                         -Wpartial-fields
                         -Wredundant-constraints
                         -threaded

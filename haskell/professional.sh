@@ -72,7 +72,6 @@ test-suite tests
                         --Wmissing-export-lists
                         --Wmissing-import-lists
                         -Wnoncanonical-monad-instances
-                        -Wnoncanonical-monadfail-instances
                         -Wpartial-fields
                         -Wredundant-constraints
                         -fdefer-typed-holes
