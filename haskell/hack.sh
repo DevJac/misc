@@ -46,6 +46,7 @@ executable {{name}}
   build-depends:        base
 EOF
 
+mkdir src
 cat > src/Main.hs <<EOF
 main = putStrLn "hello world"
 EOF

@@ -82,6 +82,7 @@ test-suite tests
                       , {{name}}
 EOF
 
+mkdir test
 cat > test/Spec.hs <<EOF
 import Lib
 
@@ -89,6 +90,7 @@ main :: IO ()
 main = helloWorld
 EOF
 
+mkdir src
 cat > src/Lib.hs <<EOF
 module Lib where
 
@@ -96,6 +98,7 @@ helloWorld :: IO ()
 helloWorld = putStrLn "hello world"
 EOF
 
+mkdir app
 cat > app/Main.hs <<EOF
 import Lib (helloWorld)
 
