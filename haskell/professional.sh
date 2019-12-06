@@ -118,8 +118,8 @@ cat > .ghci <<EOF
 :set +m
 :set -Wno-type-defaults
 :set editor vim
-:set prompt "λ %l > "
-:set prompt-cont "  %l | "
+:set prompt "\ESC[92m\STX\nλ %l > \ESC[m\STX"
+:set prompt-cont "\ESC[93m\STX  %l | \ESC[m\STX"
 EOF
 
 cd ..
