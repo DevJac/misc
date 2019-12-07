@@ -22,7 +22,10 @@ executable $1
                         InstanceSigs
                         LambdaCase
                         MultiWayIf
+                        NamedWildCards
                         NoMonomorphismRestriction
+                        NoStarIsType
+                        NumericUnderscores
                         OverloadedStrings
                         PartialTypeSignatures
                         PatternGuards

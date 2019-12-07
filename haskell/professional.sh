@@ -18,7 +18,6 @@ library
   default-language:     Haskell2010
   hs-source-dirs:       src
   exposed-modules:      Lib
-  default-extensions:   PartialTypeSignatures
   ghc-options:          -Wall
                         -Werror
                         -Wcompat
@@ -38,7 +37,6 @@ executable $1
   default-language:     Haskell2010
   hs-source-dirs:       app
   main-is:              Main.hs
-  default-extensions:   PartialTypeSignatures
   ghc-options:          -Wall
                         -Werror
                         -Wcompat
@@ -62,7 +60,6 @@ test-suite tests
   type:                 exitcode-stdio-1.0
   hs-source-dirs:       test
   main-is:              Spec.hs
-  default-extensions:   PartialTypeSignatures
   ghc-options:          -Wall
                         -Werror
                         -Wcompat
