@@ -10,7 +10,7 @@ mkdir $1
 cd $1
 
 cat > $1.cabal <<EOF
-cabal-version:          3.0
+cabal-version:          2.4
 name:                   $1
 version:                0.0.0.0
 
