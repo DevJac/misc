@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+echo "Syncing Books"
+rclone copy -P ~/Books backup:devjac/Books
+echo
+
+echo "Syncing Pictures"
+rclone copy -P ~/Pictures backup:devjac/Pictures
+echo
+
+echo "Syncing Archive"
+rclone copy -P ~/Archive backup:devjac/Archive
+echo
+
+echo "Syncing Videos"
+rclone copy -P ~/Videos backup:devjac/Videos
+echo
