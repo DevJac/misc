@@ -1,0 +1,3 @@
+color cursor    default default bold underline
+set line-graphics = utf-8
+set main-view = line-number:no,interval=1 author:abbreviated id:yes date:relative commit-title:yes,graph,refs,overflow=no
