@@ -1,0 +1,10 @@
+* Fixes
+** Missing Letters After Suspend
+In Fedora 35, after suspending and resuming, not all letters would render. Newly drawn buffers / screens were ok, but buffers from before the suspend had missing letters.
+*** Fix
+Edit ~/usr/lib/modprobe.d/nvidia-power-management.conf~ set ~NVreg_PreserveVideoMemoryAllocations~ to ~0~.
+
+~NVreg_PreserveVideoMemoryAllocations~ appears to be a setting related to preserving memory locations during suspend / resume.
+
+See:
+https://www.reddit.com/r/Fedora/comments/qv69w6/font_disappears_after_suspend_with_fedora_35_xorg/
